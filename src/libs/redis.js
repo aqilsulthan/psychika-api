@@ -1,20 +1,21 @@
-import redis from 'redis';
+import { createClient } from 'redis';
+import dotenv from 'dotenv';
 
-/**
- * Create redis client instance
- */
-const redisClient = redis.createClient({
-  url: process.env.REDIS_URI,
+// Load environment variables from .env file
+dotenv.config();
+
+const client = createClient({
+    url: process.env.REDIS_URI
 });
 
-redisClient.on('connect', () => {
-  // Successfully connected to redis!
-});
+client.on('error', (err) => console.error('Redis Client Error', err));
 
-redisClient.on('error', (err) => {
-  // TODO: There is an error caused by redis. Send it to monitoring tool!!
-  // eslint-disable-next-line no-console
-  console.log('Redis error', err);
-});
+client.connect()
+    .then(() => {
+        console.log('Connected to Redis');
+    })
+    .catch((err) => {
+        console.error('Redis Connection Error', err);
+    });
 
-export default redisClient;
+export default client;
