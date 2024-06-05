@@ -41,15 +41,15 @@ export default async function authenticate(req, res, next) {
   const minutes = Math.round(difference / 60000);
 
   // Check for refresh token and time left
-  if (refreshToken && minutes < 15) {
+  if (refreshToken && minutes < 31557600) {
     // Verify refresh token and get refresh token data
     const refreshTokenData = await tokenHelper.verifyToken(refreshToken);
 
     // Check the user of refresh token
     if (refreshTokenData.id === tokenData.id) {
       // Generate new tokens
-      const newToken = user.generateToken();
-      const newRefreshToken = user.generateToken('2h');
+      const newToken = user.generateToken('1y');
+      const newRefreshToken = user.generateToken('1y');
 
       // Set response headers
       res.setHeader('Token', newToken);

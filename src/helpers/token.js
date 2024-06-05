@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-export const generateToken = (data, expiresIn = '1h') => {
+export const generateToken = (data, expiresIn = '1y') => {
   const options = {
     expiresIn,
   };
