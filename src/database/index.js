@@ -5,6 +5,7 @@ import * as config from '@/config/sequelize';
 // import models
 import userModel from './models/user';
 import tweetModel from './models/tweet';
+import chatModel from './models/chat'; // Import the new chat model
 
 // Configuration
 const env = process.env.NODE_ENV;
@@ -17,6 +18,7 @@ const sequelize = new Sequelize(sequelizeConfig);
 const modelDefiners = [
   userModel,
   tweetModel,
+  chatModel, // Include the chat model
 ];
 
 // eslint-disable-next-line no-restricted-syntax
@@ -33,3 +35,4 @@ Object.keys(sequelize.models)
   });
 
 export default sequelize;
+export const { models } = sequelize; 
