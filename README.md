@@ -4,8 +4,6 @@
 
 This project was created to be a template when starting a new [express.js](https://github.com/expressjs/express) project.
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/mucahitnezir/express-starter.git)
-
 ## Features
 
 1. ES6+ features with babel (including **es6 import/export** feature).
@@ -21,7 +19,6 @@ For more info, browse `src/helpers/mail.js` file.
 10. Api documentation with [swagger](https://swagger.io/).
 11. Records are never deleted from the database. They are marked as deleted.
 12. Cache management with [redis](https://redis.io/).
-13. One click deploy to [Google Cloud Run](https://cloud.google.com/run).
 
 ## Api Documentation
 Api documentation of this project was created with [swagger](https://swagger.io/).  
@@ -40,23 +37,23 @@ If you want to use postgresql in your project, you don't need to make any change
 
 | Database | Dialect | Required npm Package(s) |
 | --- | --- | --- |
-| MySQL | mysql | `yarn add mysql2` |
-| MariaDB | mariadb | `yarn add mariadb` |
-| PostgreSQL | postgres | `yarn add pg pg-hstore` |
-| SQLite | sqlite | `yarn add sqlite3` |
-| Microsoft SQL Server | mssql | `yarn add tedious` |
+| MySQL | mysql | `npm add mysql2` |
+| MariaDB | mariadb | `npm add mariadb` |
+| PostgreSQL | postgres | `npm add pg pg-hstore` |
+| SQLite | sqlite | `npm add sqlite3` |
+| Microsoft SQL Server | mssql | `npm add tedious` |
 
 ### Usage of sequelize-cli
 With sequelize-cli package, you can manage model, migration and seed files.
 You can find more information with [document](https://sequelize.org/docs/v6/other-topics/migrations/). 
 
 ## Installation
-1. Firstly, you have to install npm packages with ``yarn install`` command.
+1. Firstly, you have to install npm packages with ``npm install`` command.
 2. Create empty postgres database.
 3. Create **.env** file by copying *.env.sample* file in **root directory**.
 4. Modify .env file.
-5. Use `yarn run db:migrate` command to create database tables.
-6. Finally, your app will run successfully with ``yarn run start:dev`` command.
+5. Use `npm run db:migrate` command to create database tables.
+6. Finally, your app will run successfully with ``npm run start:dev`` command.
 
 ## Authentication Endpoints
 
