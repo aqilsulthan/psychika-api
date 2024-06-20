@@ -1,7 +1,7 @@
 
 # Psychika-API
 
-This API project was created for our Bangkit capstone project, Psychika, using [express.js](https://github.com/expressjs/express).
+This API project was created for our Bangkit capstone project, Psychika.
 
 ## Features
 
@@ -21,7 +21,7 @@ For more info, browse `src/helpers/mail.js` file.
 
 ## Api Documentation
 Api documentation of this project was created with [swagger](https://swagger.io/).  
-You can access the swagger configuration file from [this link](https://aqilsulthan.github.io/psychika-api/).  
+You can access the Api configuration file from [this link](https://aqilsulthan.github.io/psychika-api/).  
 You can also discover the interactive documentation by going to `/docs` when you run the application.
 
 ## Database Selection
