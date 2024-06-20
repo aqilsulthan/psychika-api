@@ -7,6 +7,7 @@ const remlast = (str) => {
   let nstr = str.split(".");
   nstr.pop();
   return nstr.join(".") + ".";
+  return nstr.replace(/\\\"/g, '"');
 };
 
 export const handleChat = async (req, res, next) => {
