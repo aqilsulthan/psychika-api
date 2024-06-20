@@ -2,6 +2,13 @@
 import axios from 'axios';
 import db from '@/database';
 
+// Function to remove the last incomplete sentence
+const remlast = (str) => {
+  let nstr = str.split(".");
+  nstr.pop();
+  return nstr.join(".") + ".";
+};
+
 export const handleChat = async (req, res, next) => {
   try {
     const { model, messages, stream = false, options = {} } = req.body;
@@ -27,7 +34,7 @@ export const handleChat = async (req, res, next) => {
 
     const assistantMessage = {
       role: 'assistant',
-      content: response.data.message.content, // Adjust according to the response format
+      content: remlast(response.data.message.content),
     };
     transformedMessages.push(assistantMessage);
 
