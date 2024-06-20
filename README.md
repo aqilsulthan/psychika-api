@@ -1,7 +1,7 @@
 
 # Psychika-API
 
-"This API project was created for our Bangkit capstone project, Psychika, using [express.js](https://github.com/expressjs/express)."
+This API project was created for our Bangkit capstone project, Psychika, using [express.js](https://github.com/expressjs/express).
 
 ## Features
 
