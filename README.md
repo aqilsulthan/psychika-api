@@ -1,8 +1,7 @@
-![Node.js CI](https://github.com/mucahitnezir/express-starter/workflows/Node.js%20CI/badge.svg?branch=master)
 
-# Express Starter
+# Psychika-API
 
-This project was created to be a template when starting a new [express.js](https://github.com/expressjs/express) project.
+"This API project was created for our Bangkit capstone project, Psychika, using [express.js](https://github.com/expressjs/express)."
 
 ## Features
 
@@ -71,4 +70,4 @@ Anyone interested in the project can contribute to this repository. To do this, 
 Then make the changes in your repository. Finally, send a pull request to this repository.
 
 ## License
-**Express Starter** is licensed under the **MIT license**.
+**The Psychika API**, utilizing the Express Starter framework, is licensed under the **MIT License**.
