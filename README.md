@@ -22,7 +22,7 @@ For more info, browse `src/helpers/mail.js` file.
 
 ## Api Documentation
 Api documentation of this project was created with [swagger](https://swagger.io/).  
-You can access the swagger configuration file from [this link](https://app.swaggerhub.com/apis/mucahitnezir/express-starter/).  
+You can access the swagger configuration file from [this link](https://aqilsulthan.github.io/psychika-api/).  
 You can also discover the interactive documentation by going to `/docs` when you run the application.
 
 ## Database Selection
@@ -53,7 +53,7 @@ You can find more information with [document](https://sequelize.org/docs/v6/othe
 3. Create **.env** file by copying *.env.sample* file in **root directory**.
 4. Modify .env file.
 5. Use `npm run db:migrate` command to create database tables.
-6. Finally, your app will run successfully with ``npm run start:dev`` command.
+6. Finally, your app will run successfully (in port 5000) with ``npm run start:dev`` command.
 
 ## Authentication Endpoints
 
