@@ -70,4 +70,4 @@ Anyone interested in the project can contribute to this repository. To do this, 
 Then make the changes in your repository. Finally, send a pull request to this repository.
 
 ## License
-**The Psychika API**, utilizing the Express Starter framework, is licensed under the **MIT License**.
+**Psychika API**, utilizing the Express Starter framework, is licensed under the **MIT License**.
