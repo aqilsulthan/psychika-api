@@ -1,12 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Documentation of express starter api.",
+    "description": "Documentation of Psychika API.",
     "version": "1.0.0",
-    "title": "Express Starter API",
-    "contact": {
-      "email": "mucahitnezir@gmail.com"
-    },
+    "title": "Psychika API",
     "license": {
       "name": "MIT",
       "url": "https://github.com/mucahitnezir/express-starter/blob/master/LICENSE"
